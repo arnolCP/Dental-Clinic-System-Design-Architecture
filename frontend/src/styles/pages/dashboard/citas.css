@@ -1,0 +1,236 @@
+/* ================= CONTENEDOR ================= */
+
+.citas-container {
+    padding: 25px;
+    background: #f4f6f8;
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* ================= HEADER ================= */
+
+.citas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Título grande y negro */
+.citas-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000; /* Negro */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ícono azul */
+.citas-header h1 svg {
+    color: #24627b;
+}
+
+/* Botón Nueva Cita */
+.btn-nueva-cita {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #24627b;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-nueva-cita:hover {
+    background: #1b4c5f;
+    transform: translateY(-1px);
+}
+
+/* ================= BUSCADOR ================= */
+
+.citas-search {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    gap: 10px;
+    border-left: 5px solid #24627b;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.citas-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+/* ================= FILTROS ================= */
+
+.citas-filtros {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.citas-filtros select,
+.citas-filtros input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.2s;
+}
+
+.citas-filtros select:focus,
+.citas-filtros input:focus {
+    border: 1px solid #24627b;
+}
+
+/* ================= TABLA ================= */
+
+.tabla-citas {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.05);
+}
+
+.tabla-citas thead {
+    background: #24627b;
+    color: white;
+}
+
+.tabla-citas th,
+.tabla-citas td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.tabla-citas tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.tabla-citas tbody tr:hover {
+    background: #e8f0f3;
+}
+
+/* ================= ESTADOS ================= */
+
+.estado {
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* estados */
+.estado.Pendiente {
+    background: #f7c948;
+    color: #333;
+}
+
+.estado.Atendida {
+    background: #24627b;
+    color: white;
+}
+
+.estado.Cancelada {
+    background: #b02a37;
+    color: white;
+}
+
+/* ================= BOTONES ================= */
+
+.btn-changes {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+/* Botón editar */
+.btn-edit {
+    background: #c98b18;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-edit:hover {
+    background: #a76f13;
+    transform: scale(1.05);
+}
+
+/* Botón eliminar */
+.btn-delete {
+    background: #a72727;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-delete:hover {
+    background: #7f1d1d;
+    transform: scale(1.05);
+}
+
+.btn-view {
+    background: #24627b;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-view:hover {
+    background: #1b4c5f;
+    transform: scale(1.05);
+}
+
+/* ================= SIN DATOS ================= */
+
+.sin-datos {
+    text-align: center;
+    padding: 15px;
+    font-style: italic;
+    color: #777;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .citas-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .citas-filtros {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tabla-citas th,
+    .tabla-citas td {
+        font-size: 13px;
+        padding: 10px;
+    }
+}
+

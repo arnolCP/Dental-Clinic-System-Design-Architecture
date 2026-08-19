@@ -1,0 +1,157 @@
+/* ===========================
+   OVERLAY DEL MODAL
+=========================== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* ===========================
+   CONTENEDOR DEL FORMULARIO
+=========================== */
+.modal-content {
+    width: 65vw;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border: 1px solid rgba(0,0,0,0.1);
+    animation: fadeIn 0.25s ease-in-out;
+}
+
+.modal-content h3 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #133b5c;
+    letter-spacing: -0.3px;
+}
+
+/* ===========================
+   FORMULARIO GENERAL
+=========================== */
+.modal-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ===========================
+   SECCIONES DEL FORMULARIO
+=========================== */
+.form-section {
+    background: #ffffff;
+    padding: 20px 22px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.10);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.form-section h3 {
+    margin: 0 0 14px 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f2d44;
+    border-left: 4px solid #1b6ca8;
+    padding-left: 10px;
+}
+
+/* ===========================
+   GRILLA INTERNA
+=========================== */
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* ===========================
+   INPUTS Y SELECTS
+=========================== */
+.modal-formulario input,
+.modal-formulario select {
+    width: 100%;
+    padding: 11px 13px;
+    border-radius: 10px;
+    border: 1px solid #ccd6e0;
+    background: #f8fafc;
+    font-size: 0.95rem;
+    transition: 0.15s;
+}
+
+.modal-formulario input:focus,
+.modal-formulario select:focus {
+    outline: none;
+    border-color: #1b6ca8;
+    background: #ffffff;
+    box-shadow: 0 0 6px rgba(18, 85, 136, 0.25);
+}
+
+/* ===========================
+   BOTONES
+=========================== */
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* BOTÓN GUARDAR */
+.form-buttons button[type="submit"] {
+    background: #1b6ca8;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-buttons button[type="submit"]:hover {
+    background: #14527e;
+}
+
+/* BOTÓN CANCELAR */
+.form-buttons button[type="button"] {
+    background: #d5d9de;
+    color: #333;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.form-buttons button[type="button"]:hover {
+    background: #b8bfc7;
+}
+
+/* ===========================
+   ANIMACIÓN
+=========================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

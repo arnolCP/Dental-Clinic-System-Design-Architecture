@@ -1,0 +1,210 @@
+/* ===== CONTENEDOR GENERAL ===== */
+.pagina-contenedor {
+    padding: 25px;
+    background: #f5f7f9;
+    min-height: 100vh;
+}
+
+/* ===== HEADER DE CADA SECCIÓN ===== */
+.pagina-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.pagina-header h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+/* ===== BOTÓN PRINCIPAL ===== */
+.boton-primario {
+    background: #24627b;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.boton-primario:hover {
+    background: #1b4c5f;
+    transform: scale(1.05);
+}
+
+/* ===== PESTAÑAS ===== */
+.tabs-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #24627b;
+    background: white;
+    color: #24627b;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    background: #e7f3f6;
+}
+
+.tab.active {
+    background: #24627b;
+    color: white;
+}
+
+/* ===== BUSCADOR ===== */
+.usuarios-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.usuarios-search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+/* ===== TABLA ===== */
+.tabla-principal {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+
+.tabla-principal thead {
+    background: #24627b;
+    color: white;
+}
+
+.tabla-principal thead th {
+    padding: 12px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.tabla-principal tbody td {
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+}
+
+.tabla-principal tbody tr:hover {
+    background: #f0f7fa;
+}
+
+/* ===== BOTONES DE ACCIÓN ===== */
+.btn-changes {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+/* VER */
+.btn-view {
+    background: #24627b;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-view:hover {
+    background: #1b4c5f;
+    transform: scale(1.05);
+}
+
+/* EDITAR */
+.btn-edit {
+    background: #f0ad4e;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-edit:hover {
+    background: #d99633;
+    transform: scale(1.05);
+}
+
+/* ELIMINAR */
+.btn-delete {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-delete:hover {
+    background: #b02a37;
+    transform: scale(1.05);
+}
+
+/* ===== SIN DATOS ===== */
+.sin-datos {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-style: italic;
+}
+
+/* ===== MODALES ===== */
+.modal-overlay-simple {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content-simple {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 450px;
+    max-width: 90%;
+    animation: aparecer 0.2s ease-in-out;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

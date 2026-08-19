@@ -1,0 +1,181 @@
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.usuarios-container {
+    padding: 25px;
+    background: #f5f7f9;
+    min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+.usuarios-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.usuarios-header h1 {
+    font-size: 30px;
+    color: black; /* Negro como pediste */
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Botón Nuevo */
+.btn-nuevo-usuario {
+    background: #24627b;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-nuevo-usuario:hover {
+    background: #1b4c5f;
+    transform: scale(1.05);
+}
+
+/* ===== BUSCADOR ===== */
+.usuarios-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.usuarios-search input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 15px;
+}
+
+/* ===== TABLA ===== */
+.tabla-usuarios {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.tabla-usuarios thead {
+    background: #24627b;
+    color: white;
+}
+
+.tabla-usuarios thead th {
+    padding: 12px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.tabla-usuarios tbody td {
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.tabla-usuarios tbody tr:hover {
+    background: #f0f7fa;
+}
+
+/* ===== BOTONES DE ACCIONES ===== */
+.btn-changes {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+/* --- Ver --- */
+.btn-ver {
+    background: #24627b;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-ver:hover {
+    background: #1b4c5f;
+    transform: scale(1.06);
+}
+
+/* --- Editar --- */
+.btn-edit {
+    background: #f0ad4e;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-edit:hover {
+    background: #d99633;
+    transform: scale(1.06);
+}
+
+/* --- Eliminar --- */
+.btn-delete {
+    background: #dc3545;
+    border: none;
+    color: white;
+    padding: 6px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.btn-delete:hover {
+    background: #b02a37;
+    transform: scale(1.06);
+}
+
+/* ===== SIN DATOS ===== */
+.sin-datos {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-style: italic;
+}
+
+/* ===== MODAL ===== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 480px;
+    max-width: 90%;
+    animation: aparecer 0.2s ease-in-out;
+}
+
+@keyframes aparecer {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}

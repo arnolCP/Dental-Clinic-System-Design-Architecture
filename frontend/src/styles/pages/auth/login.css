@@ -1,0 +1,155 @@
+
+/* --- LAYOUT PRINCIPAL --- */
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/* --- IZQUIERDA: FORMULARIO --- */
+.login {
+  flex: 1;
+  padding: 4rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  box-sizing: border-box;
+  overflow-y: auto;
+  max-width: 600px;
+}
+
+/* TITULO */
+.login h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+/* --- FORMULARIO --- */
+.form-login {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-login label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.form-login input {
+  padding: 0.75rem;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.2s ease;
+}
+
+.form-login input:focus {
+  border-color: #6C48E6;
+  outline: none;
+}
+
+/* --- PASSWORD WRAPPER --- */
+.password-wrapper {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+}
+
+.password-input {
+  flex: 1;
+}
+
+.password-toggle {
+  width: 44px;
+  height: 44px;
+  background-color: #475686;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.password-toggle:hover {
+  background-color: #3b4b76;
+}
+
+/* --- ERROR --- */
+.error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  margin-top: -0.3rem;
+}
+
+/* --- BOTÓN PRINCIPAL --- */
+.btn-primary {
+  background-color: #475686 !important;
+  color: #fff;
+  height: 2.9rem;
+  width: 100vw;
+  border-radius: 8px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #3b4b76 !important;
+}
+
+/* --- SECCIÓN INFERIOR --- */
+.login-ingresar {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: center;
+}
+
+.login-cuenta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-cuenta p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.login-cuenta button {
+  background-color: #475686;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.login-cuenta button:hover {
+  background-color: #3b4b76;
+  transform: translateY(-1px);
+}
+
+.login-illustration {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.login-illustration img {
+  width: auto;
+  height: 80vh;
+  object-fit: contain;
+}
+
+

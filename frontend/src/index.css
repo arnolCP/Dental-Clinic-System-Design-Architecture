@@ -1,0 +1,17 @@
+/* Reset general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tamaño total de pantalla sin scrolls falsos */
+html,
+body,
+#root {
+  height: auto;
+  width: 100%;
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+}

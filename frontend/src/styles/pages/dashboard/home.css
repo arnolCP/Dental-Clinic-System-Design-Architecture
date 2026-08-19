@@ -1,0 +1,109 @@
+/* <--- ENCABEZADO --->*/
+
+.home-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #1d475b;
+}
+
+.home-subtitle {
+  color: #6b6b6b;
+  margin-bottom: 25px;
+}
+
+/* <--- ESTADO DEL SISTEMA ---> */
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-bottom: 35px;
+}
+
+.stat-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,.1);
+  text-align: center;
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  color: #1d475b;
+  margin: 0;
+}
+
+.stat-card span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.section-title {
+  margin: 20px 0 12px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1d475b;
+}
+
+/* <---  MODULOS ---> */
+
+.modules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+.module-card {
+  background: white;
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .2s;
+  box-shadow: 0px 2px 6px rgba(0,0,0,.1);
+}
+
+.module-card a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.module-card:hover {
+  background: #1d475b;
+  color: white;
+  transform: scale(1.03);
+}
+
+/* <--- TABLA DE CITAS --->*/
+
+.citas-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 2px 6px rgba(0,0,0,.1);
+}
+
+.citas-table th {
+  background: #1d475b;
+  color: white;
+  padding: 10px;
+}
+
+.citas-table td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.citas-table tr:hover {
+  background: #f1f9ff;
+}

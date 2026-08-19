@@ -1,0 +1,51 @@
+/*--- HEADER ---*/
+.dashboard-header {
+    left: 15vw;
+    width: calc(100vw - 15vw);
+    height: 65px;
+    background: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 25px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,.1);
+    z-index: 1;
+    gap: 20px;
+}
+
+/* --- DATOS USUARIO ---*/
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-icon {
+    font-size: 2rem;
+    color: #1d475b;
+}
+
+.user-name {
+    font-weight: 700;
+    display: block;
+}
+
+.user-role {
+    font-size: 0.75rem;
+    color: #666;
+    display: block;
+}
+
+
+/*--- BOTÓN ---*/
+.logout-btn {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.logout-btn:hover {
+    background: #24627b;
+}
